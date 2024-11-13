@@ -1,0 +1,94 @@
+/* src/components/Dashboard.css */
+
+/* Scope all styles under .dashboard root class */
+.dashboard-container {
+  background: linear-gradient(135deg, #f5f7fa, #e4e9f0);
+  min-height: 100vh;
+  padding: 50px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 900px;
+  margin-bottom: 40px;
+}
+
+.dashboard-header h1 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.logout-btn {
+  background-color: #ff4d4f;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.logout-btn:hover {
+  background-color: #ff1a1c;
+}
+
+.dashboard-content {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 900px;
+}
+
+.dashboard-card {
+  background-color: white;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  padding: 25px;
+  width: 100%;
+  max-width: 420px;
+}
+
+.dashboard-card h2 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #34495e;
+  margin-bottom: 15px;
+}
+
+.dashboard-card p {
+  font-size: 18px;
+  color: #555;
+  margin: 8px 0;
+}
+
+.dashboard-transactions ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dashboard-transactions li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  font-size: 16px;
+  border-bottom: 1px solid #ecf0f1;
+}
+
+.dashboard-transactions li:last-child {
+  border-bottom: none;
+}
+
+.dashboard-transactions li span {
+  font-weight: 500;
+  color: #2c3e50;
+}
